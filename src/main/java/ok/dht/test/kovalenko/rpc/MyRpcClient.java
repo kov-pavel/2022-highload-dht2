@@ -7,13 +7,16 @@ import java.lang.reflect.Proxy;
 
 public class MyRpcClient {
 
-    public static void main(String[] args) {
-        int port = 19300;
+    public static MyRpcService from(int port) {
         ConnectionString conn = new ConnectionString("localhost:" + port);
-        MyRpcService client = (MyRpcService) Proxy.newProxyInstance(
+        return (MyRpcService) Proxy.newProxyInstance(
                 MyRpcService.class.getClassLoader(),
                 new Class[] {MyRpcService.class},
                 new RpcClient(conn));
+    }
+
+    public static void main(String[] args) {
+        MyRpcService client = from(19300);
 
     }
 }

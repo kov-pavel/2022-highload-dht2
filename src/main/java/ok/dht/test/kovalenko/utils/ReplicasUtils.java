@@ -43,6 +43,12 @@ public class ReplicasUtils {
         }
     }
 
+    public record ReplicasInfo(boolean isRequestForReplica, int ack, int from) {
+        public String toHttpString() {
+            return "&ack=" + ack + "&from=" + from;
+        }
+    }
+
     public record ReplicasValidation(boolean valid, Replicas replicas) {
         public static final ReplicasValidation INVALID = new ReplicasValidation(false, null);
     }

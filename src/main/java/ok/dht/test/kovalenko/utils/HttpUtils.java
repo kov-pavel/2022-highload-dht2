@@ -1,6 +1,6 @@
 package ok.dht.test.kovalenko.utils;
 
-import ok.dht.test.kovalenko.Client;
+import ok.dht.test.kovalenko.http.Client;
 import one.nio.http.HttpSession;
 import one.nio.http.Response;
 import org.slf4j.Logger;
