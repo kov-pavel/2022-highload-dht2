@@ -1,4 +1,4 @@
-package ok.dht.test.kovalenko;
+package ok.dht.test.kovalenko.http;
 
 import java.net.URI;
 import java.net.http.HttpRequest;

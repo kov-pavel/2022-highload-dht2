@@ -1,4 +1,4 @@
-package ok.dht.test.kovalenko;
+package ok.dht.test.kovalenko.http;
 
 import ok.dht.test.kovalenko.dao.utils.PoolKeeper;
 import ok.dht.test.kovalenko.utils.HttpUtils;

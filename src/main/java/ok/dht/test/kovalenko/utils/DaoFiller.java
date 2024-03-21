@@ -1,12 +1,13 @@
 package ok.dht.test.kovalenko.utils;
 
-import ok.dht.test.kovalenko.LoadBalancer;
-import ok.dht.test.kovalenko.MyServiceBase;
-import ok.dht.test.kovalenko.Node;
+
 import ok.dht.test.kovalenko.dao.LSMDao;
 import ok.dht.test.kovalenko.dao.aliases.TypedBaseTimedEntry;
 import ok.dht.test.kovalenko.dao.aliases.TypedTimedEntry;
 import ok.dht.test.kovalenko.dao.base.ByteBufferDaoFactoryB;
+import ok.dht.test.kovalenko.http.LoadBalancer;
+import ok.dht.test.kovalenko.http.MyServiceBase;
+import ok.dht.test.kovalenko.http.Node;
 
 import java.io.IOException;
 import java.util.HashMap;

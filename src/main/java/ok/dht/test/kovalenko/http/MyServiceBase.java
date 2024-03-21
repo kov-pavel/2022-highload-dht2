@@ -1,4 +1,4 @@
-package ok.dht.test.kovalenko;
+package ok.dht.test.kovalenko.http;
 
 import ok.dht.Service;
 import ok.dht.ServiceConfig;
